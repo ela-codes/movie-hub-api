@@ -30,7 +30,7 @@ public class ApplicationDbContext : DbContext
 
     modelBuilder.Entity<MovieState>(entity =>
     {
-      entity.ToTable("movie_state", "public");
+      entity.ToTable("movie_states", "public");
       entity.HasKey(e => e.Id);
       entity.Property(e => e.Id).HasColumnName("id");
       entity.Property(e => e.MovieId).HasColumnName("movie_id");

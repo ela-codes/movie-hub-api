@@ -4,11 +4,11 @@ using MovieHubApi.Models;
 
 [ApiController]
 [Route("api/[controller]")]
-public class MoviesController : ControllerBase
+public class MovieController : ControllerBase
 {
   private readonly ApplicationDbContext _context;
 
-  public MoviesController(ApplicationDbContext context)
+  public MovieController(ApplicationDbContext context)
   {
     _context = context;
   }
